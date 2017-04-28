@@ -1,0 +1,168 @@
+/*$duration: 0.3s;
+$color: #EF5A31;*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	background-color: #d8e0e5;
+
+}
+.card{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform : translateX(-50%) translateY(-50%) ;
+    background-color: #fff;
+	box-shadow:  0px 0px 20px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+    width: 370px;
+    overflow: hidden;
+}
+
+.card_date{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 45px;
+	height: 45px;
+	background: #EF5A31;
+	padding-top: 10px;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	line-height: 13px;
+	
+	font-weight: bold;
+
+}
+.card_date_day{
+	display: block;
+	font-size: 14px;
+}
+.card_date_month{
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.card_thumb{
+	height: 215px;
+	background-color: #000;
+	transition: height 0.3s;
+    
+}
+
+.card_thumb img{
+		display: block;
+		opacity: 1;
+		 width:370px;
+		 height:215px;
+		transition: opacity 0.3s, transform 0.3s;
+		transform: scale(1);
+	
+
+	}
+
+.card:hover .card_thumb img{
+    transform: scale(1.2);
+		
+	opacity: 0.6;
+}
+.card:hover{
+
+	box-shadow:  0px 0px 50px rgba(0,0,0,0.3);
+
+}
+.card:hover .card_thumb{
+	height: 135px;
+	overflow: hidden;
+    
+}
+.card:hover .card_content{
+	height: 280px;
+}
+.card:hover .description{
+	opacity: 1;
+	transition-delay: 0.1s;
+	transform: translateY(1.2);
+
+}
+
+.card a{
+	color: #FFF;
+	text-decoration: none;
+}
+.card_content{
+	position: relative;
+	padding: 20px;
+	margin-bottom: 10px;
+	height:200px;
+	transition: height 0.3s;
+	overflow: hidden;
+}
+
+
+.category{
+	position: absolute;
+	left: 0px;top: -35px;
+	
+	height: 25px;
+	padding: 0 15px;
+	background: #EF5A31;
+	color: #FFF;
+	font-size: 11px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.title{
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 22px;
+	color: #000;
+	font-weight: bold;
+}
+.sub_title{
+	color: #EF5A31;
+	font-size: 19px;
+	
+	padding: 0 0 10px 0;
+}
+.description{
+	position: absolute;
+	
+	left: 20px;
+	bottom: 65px;
+	color: #666C74;
+	font-size: 14px;
+	line-height: 27px;
+	opacity: 0;
+	transition: opacity 0.3s, transform 0.3s;
+	transition-delay: 0s;
+	transform: translateY(25px); 
+}
+
+.card_footer{
+position: absolute;
+bottom: 20px;
+left: 10px;
+right: 20px;
+font-size: 11px;
+color: #A3A9AB;
+}
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2px;
+	cursor: default;
+}
+.icon img{
+	margin-left: 10px;
+	width: 14px;
+	height: 14px;
+
+}
+
